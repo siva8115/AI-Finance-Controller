@@ -1,0 +1,242 @@
+[
+  {
+    "order_id": "ORD-10001",
+    "payment_id": "PAY-20001",
+    "settlement_id": "SET-30001",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10002",
+    "payment_id": "PAY-20002",
+    "settlement_id": "SET-30002",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10003",
+    "payment_id": "PAY-20003",
+    "settlement_id": "SET-30003",
+    "anomaly_type": "UNMATCHED_SETTLEMENT",
+    "expected_status": "EXCEPTION",
+    "description": "Unmatched settlement: Payment PAY-20003 captured but no bank payout received."
+  },
+  {
+    "order_id": "ORD-10004",
+    "payment_id": "PAY-20004",
+    "settlement_id": "SET-30004",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10005",
+    "payment_id": "PAY-20005",
+    "settlement_id": "SET-30005",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10006",
+    "payment_id": "PAY-20006",
+    "settlement_id": "SET-30006",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10007",
+    "payment_id": "PAY-20007",
+    "settlement_id": "SET-30007",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10008",
+    "payment_id": "PAY-20008",
+    "settlement_id": "SET-30008",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10009",
+    "payment_id": "PAY-20009",
+    "settlement_id": "SET-30009",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10010",
+    "payment_id": "PAY-20010",
+    "settlement_id": "SET-30010",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10011",
+    "payment_id": "PAY-20011",
+    "settlement_id": "SET-30011",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10012",
+    "payment_id": "PAY-20012",
+    "settlement_id": "SET-30012",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10013",
+    "payment_id": "PAY-20013",
+    "settlement_id": "SET-30013",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10014",
+    "payment_id": "PAY-20014",
+    "settlement_id": "SET-30014",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10015",
+    "payment_id": "PAY-20015",
+    "settlement_id": "SET-30015",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10016",
+    "payment_id": "PAY-20016",
+    "settlement_id": "SET-30016",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10017",
+    "payment_id": "PAY-20017",
+    "settlement_id": "SET-30017",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10018",
+    "payment_id": "PAY-20018",
+    "settlement_id": "SET-30018",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10019",
+    "payment_id": "PAY-20019",
+    "settlement_id": "SET-30019",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10020",
+    "payment_id": "PAY-20020",
+    "settlement_id": "SET-30020",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10021",
+    "payment_id": "PAY-20021",
+    "settlement_id": "SET-30021",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10022",
+    "payment_id": "PAY-20022",
+    "settlement_id": "SET-30022",
+    "anomaly_type": "UNMATCHED_SETTLEMENT",
+    "expected_status": "EXCEPTION",
+    "description": "Unmatched settlement: Payment PAY-20022 captured but no bank payout received."
+  },
+  {
+    "order_id": "ORD-10023",
+    "payment_id": "PAY-20023",
+    "settlement_id": "SET-30023",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10024",
+    "payment_id": "PAY-20024",
+    "settlement_id": "SET-30024",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10025",
+    "payment_id": "PAY-20025",
+    "settlement_id": "SET-30025",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10026",
+    "payment_id": "PAY-20026",
+    "settlement_id": "SET-30026",
+    "anomaly_type": "UNMATCHED_SETTLEMENT",
+    "expected_status": "EXCEPTION",
+    "description": "Unmatched settlement: Payment PAY-20026 captured but no bank payout received."
+  },
+  {
+    "order_id": "ORD-10027",
+    "payment_id": "PAY-20027",
+    "settlement_id": "SET-30027",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10028",
+    "payment_id": "PAY-20028",
+    "settlement_id": "SET-30028",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10029",
+    "payment_id": "PAY-20029",
+    "settlement_id": "SET-30029",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  },
+  {
+    "order_id": "ORD-10030",
+    "payment_id": "PAY-20030",
+    "settlement_id": "SET-30030",
+    "anomaly_type": "EXACT_MATCH",
+    "expected_status": "MATCHED",
+    "description": "Exact 3-way match across internal orders, payment gateway, and bank settlement."
+  }
+]
