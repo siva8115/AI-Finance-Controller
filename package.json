@@ -2,6 +2,6 @@
   "name": "ai-finance-controller",
   "private": true,
   "scripts": {
-    "build": "npm --prefix frontend install && npm --prefix frontend run build"
+    "build": "cd frontend && npm install && npm run build"
   }
 }
