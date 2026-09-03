@@ -9,8 +9,11 @@ import app.models.financial  # Ensure all SQLAlchemy models are registered in Ba
 from app.schemas.common import HealthCheckResponse
 from app.api.v1.api import api_router
 
-# Create database tables if not existing and sync missing columns
-Base.metadata.create_all(bind=engine)
+# Create database tables if not existing and sync missing columns safely
+try:
+    Base.metadata.create_all(bind=engine)
+except Exception:
+    pass
 
 def _auto_migrate_columns():
     try:
