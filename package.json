@@ -1,7 +1,7 @@
 {
-  "name": "ai-finance-controller-root",
+  "name": "ai-finance-controller",
   "private": true,
   "scripts": {
-    "build": "npm run build --prefix frontend"
+    "build": "npm --prefix frontend install && npm --prefix frontend run build"
   }
 }
