@@ -26,17 +26,24 @@ class DataIngestionService:
         """Ingests orders.csv, payments.csv, and settlements.csv into SQLite database."""
         # Ensure database tables exist on target session
         Base.metadata.create_all(bind=db.get_bind())
+        from app.core.config import BASE_DIR
         raw_data_dir = raw_data_dir or settings.RAW_DATA_DIR
-
 
         orders_file = raw_data_dir / "orders.csv"
         payments_file = raw_data_dir / "payments.csv"
         settlements_file = raw_data_dir / "settlements.csv"
 
-        if not orders_file.exists() or not payments_file.exists() or not settlements_file.exists():
-            raise FileNotFoundError(
-                f"Missing raw CSV files in {raw_data_dir}. Ensure data generator has run."
-            )
+        if not (orders_file.exists() and payments_file.exists() and settlements_file.exists()):
+            fallback_dir = BASE_DIR / "data" / "raw"
+            if (fallback_dir / "orders.csv").exists() and (fallback_dir / "payments.csv").exists():
+                raw_data_dir = fallback_dir
+                orders_file = raw_data_dir / "orders.csv"
+                payments_file = raw_data_dir / "payments.csv"
+                settlements_file = raw_data_dir / "settlements.csv"
+            else:
+                raise FileNotFoundError(
+                    f"Missing raw CSV files in {raw_data_dir}. Ensure data generator has run."
+                )
 
         def read_csv(path):
             with open(path, "r", encoding="utf-8") as f:
