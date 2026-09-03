@@ -6,12 +6,20 @@ All test modules share this conftest so that:
 2. Each test gets a clean database via the setup_db fixture autouse.
 3. No module-level override_get_db collisions between test files.
 """
+import sys
+from pathlib import Path
+
+backend_dir = Path(__file__).resolve().parent.parent
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
+import app.models.financial  # Register models first
 from app.main import app
 from app.core.database import Base, get_db
 

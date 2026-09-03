@@ -9,11 +9,15 @@ import app.models.financial  # Ensure all SQLAlchemy models are registered in Ba
 from app.schemas.common import HealthCheckResponse
 from app.api.v1.api import api_router
 
+import logging
+
+logger = logging.getLogger("app.main")
+
 # Create database tables if not existing and sync missing columns safely
 try:
     Base.metadata.create_all(bind=engine)
-except Exception:
-    pass
+except Exception as err:
+    logger.warning("Database schema creation warning: %s", err)
 
 def _auto_migrate_columns():
     try:
@@ -34,8 +38,8 @@ def _auto_migrate_columns():
                         sql = f"ALTER TABLE {tablename} ADD COLUMN {column.name} {col_type}{default_str}"
                         with engine.begin() as conn:
                             conn.execute(text(sql))
-    except Exception as e:
-        pass
+    except Exception as err:
+        logger.warning("Auto column migration warning: %s", err)
 
 _auto_migrate_columns()
 
